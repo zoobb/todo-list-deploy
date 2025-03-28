@@ -1,6 +1,6 @@
 services:
   frontend:
-    build: ./frontend
+    build: ./todo-list-frontend
     ports:
       - "80:80"
     depends_on:
@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
   
   backend:
-    build: ./backend
+    build: ./todo-list-backend
     ports:
       - "8080:8080"
     depends_on:
